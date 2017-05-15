@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark2">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <EditText
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:ems="10"
+            android:id="@+id/username"
+            />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/passwd"
+            android:allowUndo="true"
+            android:autoText="true"
+            android:hint="Password"
+            />
+
+        <Button
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:textColor="@color/colorAccent"
+            android:text="Sign in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:background="@drawable/buttonshape"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:onClick="Login"
+            android:contextClickable="true"/>
+        <Button
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent"
+            android:text="Don't have an account?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup"
+            android:background="@drawable/bluebutton"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:onClick="Register"
+            android:contextClickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

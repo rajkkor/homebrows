@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/img1"
+            android:id="@+id/imageView" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:padding="50dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Antal Rum"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="3"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="antal butiker inom 500 meter"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="2"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_column="1"
+                    android:text="Bussar inom 1km"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="Ja"
+                    android:gravity="right"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

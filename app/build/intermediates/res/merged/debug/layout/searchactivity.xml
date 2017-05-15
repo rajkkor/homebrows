@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        ></include>
+    <EditText
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/kommun"
+        android:contentDescription="kommun"
+        android:text=""
+        android:allowUndo="true"
+        android:autoText="true"
+        android:hint="kommun" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/distans"
+        android:contentDescription="kommun"
+        android:text=""
+        android:allowUndo="true"
+        android:autoText="true"
+        android:hint="distans(km)"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/lowest_price"
+            android:contentDescription="kommun"
+            android:text=""
+            android:layout_weight="1"
+            android:allowUndo="true"
+            android:autoText="true"
+            android:hint="minsta pris"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/higehst_price"
+            android:contentDescription="kommun"
+            android:text=""
+            android:layout_weight="1"
+            android:allowUndo="true"
+            android:autoText="true"
+            android:hint="högsta pris" />
+    </LinearLayout>
+    <Button
+        android:layout_margin="70dp"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:background="@drawable/buttonshape"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Login"
+        android:contextClickable="true"/>
+
+
+</LinearLayout>
